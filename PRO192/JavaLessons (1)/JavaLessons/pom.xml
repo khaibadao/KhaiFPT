@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lekhai</groupId>
+    <artifactId>JavaLessons</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>JavaLessons - PRO192</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+        <!-- NetBeans đọc thuộc tính này để biết class nào chạy khi bấm Run (F6) -->
+        <exec.mainClass>Main</exec.mainClass>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Ghi Main-Class vào jar để chạy được bằng: java -jar target/JavaLessons-1.0.jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
