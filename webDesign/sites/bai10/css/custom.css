@@ -1,0 +1,100 @@
+/* mau chu dao, ghi de bien cua bootstrap */
+:root {
+  --bs-link-color-rgb: 20, 83, 45;
+  --bs-link-hover-color-rgb: 12, 56, 30;
+}
+
+[data-bs-theme="dark"] {
+  --bs-link-color-rgb: 246, 178, 122;
+  --bs-link-hover-color-rgb: 255, 214, 170;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* chua cho navbar dinh tren */
+}
+
+.skip {
+  position: absolute;
+  z-index: 2000;
+  top: 8px;
+  left: 8px;
+  padding: 8px 14px;
+  background: #f6b27a;
+  color: #14532d;
+  font-weight: bold;
+}
+
+/* phan dau trang co anh nen */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+              url("../images/da-nang-dem.jpg") center / cover;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero h1 {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* nut bao quanh anh trong the */
+.img-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  overflow: hidden;
+  border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card-img-top.bottom {
+  object-position: bottom;
+}
+
+.img-btn:hover .card-img-top,
+.img-btn:focus-visible .card-img-top {
+  transform: scale(1.06);
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+/* nguoi dung bat giam chuyen dong: tat het hieu ung */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card,
+  .card-img-top {
+    transition: none;
+  }
+
+  .card:hover,
+  .img-btn:hover .card-img-top {
+    transform: none;
+  }
+}

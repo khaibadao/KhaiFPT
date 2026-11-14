@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lê Khải · Portfolio</title>
+  <meta name="description" content="Portfolio của Lê Khải, sinh viên FPT Đà Nẵng: dự án lập trình, nghiên cứu và nhiếp ảnh.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Chuyển đến nội dung chính</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="logo" href="#top">khai<span>.dev</span></a>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Mở menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Menu chính">
+        <ul>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#photos">Nhiếp ảnh</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-btn" type="button" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="theme-text">Chế độ tối</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Xin chào, mình là</p>
+          <h1>Lê Khải</h1>
+          <p class="hero-text">Sinh viên IT tại FPT Đà Nẵng. Mình thích làm những thứ chạy được thật: một app nhỏ cho máy tính, một trang web gọn gàng, hay một tấm ảnh chụp đêm đúng sáng.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">Xem dự án</a>
+            <a class="btn btn-ghost" href="https://github.com/khaibadao">GitHub của mình</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/da-nang-dem.jpg" alt="Đà Nẵng về đêm nhìn từ trên núi, ảnh do Khải chụp" width="1600" height="1200">
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>Giới thiệu</h2>
+        <div class="about-grid">
+          <p>Trước khi vào FPT mình từng làm coder một thời gian, nên quen với việc viết code để giải quyết việc thật. Hiện mình đang học Java OOP, hệ điều hành, mạng máy tính và thiết kế web. Ngoài giờ học thì mình làm dự án cá nhân và đi chụp ảnh.</p>
+          <div>
+            <h3>Kỹ năng</h3>
+            <ul class="skills">
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>C# / WPF</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>SQL</li>
+              <li>Linux</li>
+              <li>Git</li>
+              <li>Cisco Packet Tracer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="wrap">
+        <h2>Dự án</h2>
+
+        <div class="filters" role="group" aria-label="Lọc dự án">
+          <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Tất cả</button>
+          <button type="button" class="filter" data-filter="app" aria-pressed="false">Ứng dụng</button>
+          <button type="button" class="filter" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter" data-filter="research" aria-pressed="false">Nghiên cứu</button>
+        </div>
+        <p class="filter-status" aria-live="polite">Đang hiện 4 dự án</p>
+
+        <div class="projects">
+          <article class="project reveal" data-type="app">
+            <p class="project-tag">Ứng dụng Windows</p>
+            <h3>Dynamic Island for Windows</h3>
+            <p>Bản tuỳ biến của app "tai thỏ" cho Windows 11: hiện thông báo, nhạc, lịch học, hạn chót và đồng hồ Pomodoro ở mép trên màn hình. Mình phát hành qua GitHub Releases cho bạn bè dùng.</p>
+            <ul class="tech"><li>C#</li><li>WPF</li><li>.NET 8</li></ul>
+            <a class="project-link" href="https://github.com/khaibadao/dynamic-island-on-windows">Xem trên GitHub<span class="sr-only"> (Dynamic Island for Windows)</span></a>
+          </article>
+
+          <article class="project reveal" data-type="web">
+            <p class="project-tag">Dự án nhóm · Web</p>
+            <h3>SMART FILTER</h3>
+            <p>Nền tảng web phân loại và gợi ý công cụ AI: thư mục 100 công cụ trong 8 nhóm, bảng xếp hạng và lộ trình. Mình làm bản demo và viết báo cáo tiếng Anh.</p>
+            <ul class="tech"><li>HTML</li><li>JavaScript</li><li>Claude API</li></ul>
+          </article>
+
+          <article class="project reveal" data-type="research">
+            <p class="project-tag">Nghiên cứu nhóm</p>
+            <h3>SLR: phân loại văn bản tiếng Việt</h3>
+            <p>Tổng quan tài liệu có hệ thống về các mô hình Transformer cho phân loại văn bản tiếng Việt (2022–2025), như PhoBERT, ViSoBERT, ViT5. Mình phụ trách phần Abstract, Introduction và Related Works.</p>
+            <ul class="tech"><li>NLP</li><li>LaTeX</li><li>PRISMA</li></ul>
+          </article>
+
+          <article class="project reveal" data-type="research">
+            <p class="project-tag">Thuyết trình</p>
+            <h3>Quản lý bộ nhớ &amp; hệ thống tệp Linux</h3>
+            <p>Bài thuyết trình tiếng Anh cho môn Hệ điều hành (OSG202): bộ nhớ ảo, phân trang, swap và cách Linux tổ chức hệ thống tệp.</p>
+            <ul class="tech"><li>Linux</li><li>OS</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos" class="section">
+      <div class="wrap">
+        <h2>Nhiếp ảnh</h2>
+        <p>Mình chụp bằng Sony A6000 với ống TTArtisan 35mm f/1.8, chủ yếu là phong cảnh và đường phố lúc tối.</p>
+        <div class="photo-row">
+          <figure class="reveal">
+            <img src="images/cau-rong.jpg" alt="Cầu Rồng phun lửa vào buổi tối" width="670" height="458" loading="lazy">
+            <figcaption>Cầu Rồng</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="images/bien-dem.jpg" alt="Bãi biển ban đêm với bầu trời đầy sao" width="1600" height="1200" loading="lazy">
+            <figcaption>Biển lúc nửa đêm</figcaption>
+          </figure>
+          <figure class="reveal">
+            <img src="images/duong-dem.jpg" alt="Con đường vắng ban đêm dưới hàng cây và đèn đường" width="1200" height="1600" loading="lazy">
+            <figcaption>Đường về nhà</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="wrap contact">
+        <h2>Liên hệ</h2>
+        <p>Muốn hỏi về dự án hay rủ đi chụp ảnh thì nhắn mình qua GitHub nhé.</p>
+        <a class="btn" href="https://github.com/khaibadao">github.com/khaibadao</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2026</span> Lê Khải · Viết tay bằng HTML, CSS và JavaScript</p>
+      <a href="#top">Lên đầu trang</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

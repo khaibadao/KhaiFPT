@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khải · Ảnh đêm Đà Nẵng</title>
+  <meta name="description" content="Portfolio nhiếp ảnh của Lê Khải, làm bằng framework Bulma.">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Chuyển đến nội dung chính</a>
+
+  <nav class="navbar is-spaced has-shadow" aria-label="Menu chính">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item brand" href="#top">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <strong>Khải</strong>&nbsp;·&nbsp;ảnh
+        </a>
+
+        <button type="button" class="navbar-burger" aria-label="Mở menu" aria-expanded="false" data-target="mainMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div id="mainMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#gallery">Bộ ảnh</a>
+          <a class="navbar-item" href="#about">Về mình</a>
+          <a class="navbar-item" href="#gear">Đồ nghề</a>
+          <div class="navbar-item">
+            <a class="button is-warning is-rounded" href="https://github.com/khaibadao">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero is-medium hero-photo" id="top">
+    <div class="hero-body">
+      <div class="container">
+        <p class="subtitle is-6 hero-kicker">Portfolio nhiếp ảnh</p>
+        <h1 class="title is-1">Đà Nẵng khi trời tối</h1>
+        <p class="subtitle is-5">Chín tấm ảnh mình chụp bằng Sony A6000 · TTArtisan 35mm f/1.8</p>
+        <a class="button is-warning is-medium is-rounded" href="#gallery">Xem bộ ảnh</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="gallery">
+      <div class="container">
+        <h2 class="title is-2">Bộ ảnh</h2>
+        <p class="subtitle is-6">Bấm vào ảnh để xem lớn. Trong khung xem ảnh có thể dùng phím ← → và Esc.</p>
+
+        <div class="tabs is-toggle is-rounded is-centered-mobile">
+          <ul class="filter-tabs">
+            <li class="is-active"><button type="button" data-filter="all" aria-pressed="true">Tất cả</button></li>
+            <li><button type="button" data-filter="dem" aria-pressed="false">Chụp đêm</button></li>
+            <li><button type="button" data-filter="troi" aria-pressed="false">Bình minh &amp; hoàng hôn</button></li>
+            <li><button type="button" data-filter="doi-thuong" aria-pressed="false">Đời thường</button></li>
+          </ul>
+        </div>
+        <p class="filter-status" aria-live="polite">Đang hiện 9 ảnh</p>
+
+        <div class="columns is-multiline photo-grid">
+          <div class="column is-6-tablet is-4-desktop" data-cat="dem">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/cau-rong.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-cau-rong.jpg" alt="Đầu rồng trên Cầu Rồng phun lửa vào buổi tối" width="640" height="437" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Cầu Rồng</h3>
+                <div class="tags"><span class="tag is-dark">Chụp đêm</span><span class="tag">Tối thứ 7</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="dem">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/da-nang-dem.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-da-nang-dem.jpg" alt="Toàn cảnh Đà Nẵng về đêm nhìn từ trên núi, mây phủ thấp" width="640" height="480" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Thành phố dưới mây</h3>
+                <div class="tags"><span class="tag is-dark">Chụp đêm</span><span class="tag">Sơn Trà</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="troi">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/linh-ung.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-linh-ung.jpg" alt="Tượng Quan Âm chùa Linh Ứng nhìn ra vịnh lúc hoàng hôn" width="548" height="364" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Chùa Linh Ứng</h3>
+                <div class="tags"><span class="tag is-warning">Hoàng hôn</span><span class="tag">Sơn Trà</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="dem">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/bien-dem.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-bien-dem.jpg" alt="Bãi biển ban đêm với bầu trời đầy sao và mây sáng xanh" width="640" height="480" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Biển lúc nửa đêm</h3>
+                <div class="tags"><span class="tag is-dark">Chụp đêm</span><span class="tag">Phơi sáng lâu</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="troi">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/binh-minh-my-khe.jpg">
+                <span class="image is-4by3">
+                  <img class="pos-bottom" src="images/thumb-binh-minh-my-khe.jpg" alt="Mặt trời mọc trên biển Mỹ Khê, nhiều người đang tắm biển" width="480" height="640" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Bình minh Mỹ Khê</h3>
+                <div class="tags"><span class="tag is-warning">Bình minh</span><span class="tag">5h sáng</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="troi">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/cau-tran-thi-ly.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-cau-tran-thi-ly.jpg" alt="Cầu Trần Thị Lý trên sông Hàn lúc hoàng hôn, có chiếc thuyền nhỏ" width="640" height="291" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Hoàng hôn sông Hàn</h3>
+                <div class="tags"><span class="tag is-warning">Hoàng hôn</span><span class="tag">Sông Hàn</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="dem">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/duong-dem.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-duong-dem.jpg" alt="Con đường vắng ban đêm dưới hàng cây và đèn đường vàng" width="480" height="640" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Đường về nhà</h3>
+                <div class="tags"><span class="tag is-dark">Chụp đêm</span><span class="tag">Đường phố</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="doi-thuong">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/cho-han.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-cho-han.jpg" alt="Bên trong chợ Hàn đông khách, các sạp bày đầy đặc sản" width="640" height="427" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Chợ Hàn</h3>
+                <div class="tags"><span class="tag is-info">Đời thường</span><span class="tag">Đông người</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-6-tablet is-4-desktop" data-cat="doi-thuong">
+            <div class="card">
+              <button type="button" class="photo-btn" data-full="images/ca-phe.jpg">
+                <span class="image is-4by3">
+                  <img src="images/thumb-ca-phe.jpg" alt="Ly cà phê muối phủ bột cacao trên bàn gỗ" width="640" height="640" loading="lazy">
+                </span>
+              </button>
+              <div class="card-content">
+                <h3 class="title is-5">Cà phê muối</h3>
+                <div class="tags"><span class="tag is-info">Đời thường</span><span class="tag">Cận cảnh</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-band" id="about">
+      <div class="container">
+        <div class="columns is-vcentered is-variable is-6">
+          <div class="column is-7">
+            <h2 class="title is-2">Về mình</h2>
+            <div class="content">
+              <p>Mình là <strong>Lê Khải</strong>, sinh viên IT ở FPT Đà Nẵng. Chụp ảnh là cách mình nghỉ ngơi sau những buổi code: xách máy ra đường lúc trời vừa tối, đứng chờ đèn lên rồi bấm.</p>
+              <p>Mình thích ảnh đêm vì nó buộc mình phải hiểu máy: tốc độ màn trập, ISO, cách giữ máy cho khỏi rung. Mấy tấm ở đây phần lớn chụp tay, vài tấm có chân máy mini.</p>
+            </div>
+          </div>
+          <div class="column is-5">
+            <nav class="level is-mobile stats" aria-label="Vài con số">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Ảnh</p>
+                  <p class="title">9</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Chủ đề</p>
+                  <p class="title">3</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Máy</p>
+                  <p class="title">1</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Ống</p>
+                  <p class="title">1</p>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gear">
+      <div class="container">
+        <h2 class="title is-2">Đồ nghề</h2>
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-5">Sony A6000</h3>
+              <p>Máy mirrorless cũ nhưng nhẹ, mang đi cả ngày không mỏi. Chụp đêm thì phải chịu khó chỉnh tay.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-5">TTArtisan 35mm f/1.8</h3>
+              <p>Ống lấy nét tay, khẩu f/1.8 đủ sáng cho đường phố buổi tối. Góc nhìn gần với mắt người.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="box">
+              <h3 class="title is-5">Chân máy mini</h3>
+              <p>Dùng cho mấy tấm phơi sáng lâu như ảnh biển nửa đêm, đặt tạm lên lan can hay mỏm đá.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p><strong>Khải · ảnh</strong> — làm bằng <a href="https://bulma.io">Bulma 1.0</a>. Ảnh do Lê Khải chụp.</p>
+      <p><a href="#top">Lên đầu trang</a></p>
+    </div>
+  </footer>
+
+  <!-- khung xem anh (Bulma modal) -->
+  <div class="modal" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
+    <div class="modal-background" data-close></div>
+    <div class="modal-content viewer-content">
+      <figure class="image">
+        <img id="viewerImg" src="images/cau-rong.jpg" alt="">
+      </figure>
+      <div class="viewer-bar">
+        <button type="button" class="button is-dark is-rounded" data-prev aria-label="Ảnh trước">←</button>
+        <p class="viewer-caption"><span id="viewerTitle">Ảnh</span> <span class="viewer-count" id="viewerCount"></span></p>
+        <button type="button" class="button is-dark is-rounded" data-next aria-label="Ảnh sau">→</button>
+      </div>
+    </div>
+    <button type="button" class="modal-close is-large" aria-label="Đóng" data-close></button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lê Khải · vCard Portfolio</title>
+  <meta name="description" content="Portfolio dạng vCard của Lê Khải, sinh viên FPT Đà Nẵng.">
+
+  <link rel="icon" href="./assets/images/logo.ico">
+
+  <!-- font va icon tai ve may (khong goi CDN) -->
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/khai.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#content">Chuyển đến nội dung chính</a>
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar aria-label="Thông tin cá nhân">
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-lk.png" alt="Ảnh đại diện: chữ LK viết tắt tên Lê Khải" width="80" height="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name">Lê Khải</h1>
+
+          <p class="title">Sinh viên IT · Nhiếp ảnh</p>
+        </div>
+
+        <button class="info_more-btn" type="button" data-sidebar-btn aria-expanded="false" aria-controls="sidebar-more">
+          <span>Xem liên hệ</span>
+
+          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more" id="sidebar-more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">GitHub</p>
+
+              <a href="https://github.com/khaibadao" class="contact-link">github.com/khaibadao</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Trường</p>
+
+              <p class="contact-link">Đại học FPT Đà Nẵng</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="camera-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Máy ảnh</p>
+
+              <p class="contact-link">Sony A6000 · TTArtisan 35mm</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Nơi ở</p>
+
+              <address>Đà Nẵng, Việt Nam</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/khaibadao" class="social-link" aria-label="GitHub của Lê Khải">
+              <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content" id="content" tabindex="-1">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar" aria-label="Các mục">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" type="button" data-nav-link data-target="about" aria-current="page">Giới thiệu</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" type="button" data-nav-link data-target="resume">Hồ sơ</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" type="button" data-nav-link data-target="portfolio">Dự án</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" type="button" data-nav-link data-target="contact">Liên hệ</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about" id="about">
+
+        <header>
+          <h2 class="h2 article-title">Giới thiệu</h2>
+        </header>
+
+        <section class="about-text" aria-label="Đôi nét về mình">
+          <p>
+            Mình là Khải, sinh viên Công nghệ thông tin tại Đại học FPT Đà Nẵng. Trước khi vào trường mình từng làm coder
+            một thời gian, nên mình thích nhất là làm ra những thứ dùng được thật: một app nhỏ cho máy tính, một trang web
+            gọn gàng, hay một bài báo cáo rõ ràng.
+          </p>
+
+          <p>
+            Ngoài giờ học, mình đi chụp ảnh. Phần lớn là phong cảnh và đường phố Đà Nẵng lúc tối, bằng chiếc Sony A6000
+            và ống TTArtisan 35mm f/1.8.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Mình đang làm gì</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Ứng dụng Windows</h4>
+
+                <p class="service-item-text">
+                  Tự làm và duy trì bản tuỳ biến Dynamic Island cho Windows 11 bằng C# và WPF.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Thiết kế web</h4>
+
+                <p class="service-item-text">
+                  Học HTML, CSS, JavaScript và responsive design; chú trọng trang hợp lệ W3C và dễ truy cập.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Nghiên cứu NLP</h4>
+
+                <p class="service-item-text">
+                  Tham gia tổng quan tài liệu về mô hình Transformer cho phân loại văn bản tiếng Việt.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="" width="40" height="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Nhiếp ảnh</h4>
+
+                <p class="service-item-text">
+                  Chụp đêm và đường phố quanh Đà Nẵng: Cầu Rồng, biển Mỹ Khê, sông Hàn.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume" id="resume">
+
+        <header>
+          <h2 class="h2 article-title">Hồ sơ</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <h3 class="h3">Học tập</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Đại học FPT Đà Nẵng</h4>
+
+              <span>Đang học</span>
+
+              <p class="timeline-text">
+                Ngành Công nghệ thông tin. Các môn đang học: Lập trình hướng đối tượng với Java (PRO192), Hệ điều hành
+                (OSG202), Toán rời rạc (MAD101), Đại số tuyến tính (MAE101).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cisco Networking Academy</h4>
+
+              <span>Đang học</span>
+
+              <p class="timeline-text">
+                CCNA: Introduction to Networks, thực hành mô phỏng mạng bằng Cisco Packet Tracer.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chuyên đề thiết kế web (Coursera)</h4>
+
+              <span>Đang học</span>
+
+              <p class="timeline-text">
+                HTML5, CSS3, JavaScript tương tác, responsive design và trợ năng web (W3C, WAVE).
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <h3 class="h3">Kinh nghiệm</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dự án cá nhân: Dynamic Island for Windows</h4>
+
+              <span>Hiện tại</span>
+
+              <p class="timeline-text">
+                Phát hành qua GitHub Releases cho bạn bè dùng, nhận góp ý và cập nhật thường xuyên.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Coder</h4>
+
+              <span>Trước khi vào FPT</span>
+
+              <p class="timeline-text">
+                Làm việc như một lập trình viên trước khi đi học đại học, quen với việc viết code cho nhu cầu thật.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Kỹ năng (tự đánh giá)</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h4 class="h5">HTML &amp; CSS</h4>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg" role="progressbar" aria-label="HTML và CSS" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h4 class="h5">JavaScript</h4>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg" role="progressbar" aria-label="JavaScript" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h4 class="h5">C# / WPF</h4>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg" role="progressbar" aria-label="C# và WPF" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h4 class="h5">Java</h4>
+                <data value="45">45%</data>
+              </div>
+
+              <div class="skill-progress-bg" role="progressbar" aria-label="Java" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio" id="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Dự án</h2>
+        </header>
+
+        <section class="projects" aria-label="Danh sách dự án">
+
+          <ul class="filter-list" aria-label="Lọc theo loại">
+
+            <li class="filter-item">
+              <button class="active" type="button" data-filter-btn data-value="all" aria-pressed="true">Tất cả</button>
+            </li>
+
+            <li class="filter-item">
+              <button type="button" data-filter-btn data-value="photo" aria-pressed="false">Nhiếp ảnh</button>
+            </li>
+
+            <li class="filter-item">
+              <button type="button" data-filter-btn data-value="code" aria-pressed="false">Lập trình</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" type="button" data-select aria-expanded="false" aria-controls="select-list">
+              <span class="select-value" data-select-value>Chọn loại</span>
+
+              <span class="select-icon">
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </span>
+            </button>
+
+            <ul class="select-list" id="select-list">
+
+              <li class="select-item">
+                <button type="button" data-select-item data-value="all">Tất cả</button>
+              </li>
+
+              <li class="select-item">
+                <button type="button" data-select-item data-value="photo">Nhiếp ảnh</button>
+              </li>
+
+              <li class="select-item">
+                <button type="button" data-select-item data-value="code">Lập trình</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <p class="filter-status" aria-live="polite" data-filter-status>Đang hiện 9 mục</p>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="code">
+              <a href="https://github.com/khaibadao/dynamic-island-on-windows">
+                <figure class="project-img">
+                  <span class="project-item-icon-box">
+                    <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                  </span>
+
+                  <img src="./assets/images/cover-dynamic-island.png" alt="" loading="lazy" width="800" height="600">
+                </figure>
+
+                <h3 class="project-title">Dynamic Island for Windows</h3>
+
+                <p class="project-category">Lập trình · xem trên GitHub</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="code">
+              <div class="project-static">
+                <figure class="project-img">
+                  <img src="./assets/images/cover-smart-filter.png" alt="" loading="lazy" width="800" height="600">
+                </figure>
+
+                <h3 class="project-title">SMART FILTER</h3>
+
+                <p class="project-category">Lập trình · dự án nhóm</p>
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="code">
+              <div class="project-static">
+                <figure class="project-img">
+                  <img src="./assets/images/cover-slr-nlp.png" alt="" loading="lazy" width="800" height="600">
+                </figure>
+
+                <h3 class="project-title">SLR: phân loại văn bản tiếng Việt</h3>
+
+                <p class="project-category">Nghiên cứu · dự án nhóm</p>
+              </div>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photo">
+              <a href="./assets/images/cau-rong.jpg">
+                <figure class="project-img">
+                  <span class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </span>
+
+                  <img src="./assets/images/cau-rong.jpg" alt="Cầu Rồng phun lửa vào buổi tối" loading="lazy" width="670" height="458">
+                </figure>
+
+                <h3 class="project-title">Cầu Rồng</h3>
+
+                <p class="project-category">Nhiếp ảnh · mở ảnh lớn</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photo">
+              <a href="./assets/images/da-nang-dem.jpg">
+                <figure class="project-img">
+                  <span class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </span>
+
+                  <img src="./assets/images/da-nang-dem.jpg" alt="Thành phố Đà Nẵng về đêm nhìn từ trên núi" loading="lazy" width="1600" height="1200">
+                </figure>
+
+                <h3 class="project-title">Đà Nẵng về đêm</h3>
+
+                <p class="project-category">Nhiếp ảnh · mở ảnh lớn</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photo">
+              <a href="./assets/images/bien-dem.jpg">
+                <figure class="project-img">
+                  <span class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </span>
+
+                  <img src="./assets/images/bien-dem.jpg" alt="Bãi biển ban đêm với bầu trời đầy sao" loading="lazy" width="1600" height="1200">
+                </figure>
+
+                <h3 class="project-title">Biển lúc nửa đêm</h3>
+
+                <p class="project-category">Nhiếp ảnh · mở ảnh lớn</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photo">
+              <a href="./assets/images/cau-tran-thi-ly.jpg">
+                <figure class="project-img">
+                  <span class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </span>
+
+                  <img src="./assets/images/cau-tran-thi-ly.jpg" alt="Cầu Trần Thị Lý trên sông Hàn lúc hoàng hôn" loading="lazy" width="1008" height="458">
+                </figure>
+
+                <h3 class="project-title">Hoàng hôn sông Hàn</h3>
+
+                <p class="project-category">Nhiếp ảnh · mở ảnh lớn</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photo">
+              <a href="./assets/images/binh-minh-my-khe.jpg">
+                <figure class="project-img">
+                  <span class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </span>
+
+                  <img class="img-bottom" src="./assets/images/binh-minh-my-khe.jpg" alt="Bình minh trên biển Mỹ Khê, nhiều người tắm biển" loading="lazy" width="1200" height="1600">
+                </figure>
+
+                <h3 class="project-title">Bình minh Mỹ Khê</h3>
+
+                <p class="project-category">Nhiếp ảnh · mở ảnh lớn</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="photo">
+              <a href="./assets/images/duong-dem.jpg">
+                <figure class="project-img">
+                  <span class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </span>
+
+                  <img src="./assets/images/duong-dem.jpg" alt="Con đường vắng ban đêm dưới hàng cây và đèn đường" loading="lazy" width="1200" height="1600">
+                </figure>
+
+                <h3 class="project-title">Đường về nhà</h3>
+
+                <p class="project-category">Nhiếp ảnh · mở ảnh lớn</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact" id="contact">
+
+        <header>
+          <h2 class="h2 article-title">Liên hệ</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Nhắn cho mình</h3>
+
+          <p class="contact-note">
+            Trang này không có máy chủ nên mình bỏ form liên hệ của template. Muốn hỏi về dự án hay rủ đi chụp ảnh thì
+            nhắn mình qua GitHub nhé.
+          </p>
+
+          <a class="form-btn contact-btn" href="https://github.com/khaibadao">
+            <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+            <span>github.com/khaibadao</span>
+          </a>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="credit">
+    <p>Dựa trên template <a href="https://github.com/codewithsadee/vcard-personal-portfolio">vCard</a> của codewithsadee (giấy phép MIT), đã chỉnh sửa bởi Lê Khải.</p>
+  </footer>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon (ban tai ve may)
+  -->
+  <script type="module" src="./assets/vendor/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="./assets/vendor/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

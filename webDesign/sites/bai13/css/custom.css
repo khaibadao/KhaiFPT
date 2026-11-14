@@ -1,0 +1,230 @@
+/* custom.css: phan nho them vao Bulma.
+   Mau va font lay tu bien CSS cua Bulma 1.0 (--bulma-...) nen tu doi theo che do sang/toi. */
+
+:root {
+  --bulma-family-primary: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* ---- skip link ---- */
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 12px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 0 0 8px 8px;
+  background: hsl(48, 100%, 67%);
+  color: hsl(0, 0%, 10%);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ---- navbar ---- */
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+.brand-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: hsl(42, 100%, 55%);
+  box-shadow: 0 0 10px hsl(42, 100%, 55%);
+}
+
+/* ---- hero co anh nen ---- */
+.hero-photo {
+  background: linear-gradient(90deg, hsla(225, 45%, 6%, 0.9) 0%, hsla(225, 45%, 6%, 0.45) 70%),
+              url("../images/da-nang-dem.jpg") center 70% / cover;
+}
+
+.hero-photo .title,
+.hero-photo .subtitle {
+  color: hsl(0, 0%, 100%);
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: hsl(45, 100%, 70%) !important;
+}
+
+/* ---- tabs loc: Bulma tabs dung the a, o day dung button nen can style lai ---- */
+.filter-tabs button {
+  font: inherit;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1.1em;
+  border: 1px solid var(--bulma-border);
+  margin-bottom: 0;
+}
+
+.tabs.is-toggle li:first-child button {
+  border-start-start-radius: 9999px;
+  border-end-start-radius: 9999px;
+}
+
+.tabs.is-toggle li:last-child button {
+  border-start-end-radius: 9999px;
+  border-end-end-radius: 9999px;
+}
+
+.tabs.is-toggle li + li button {
+  margin-inline-start: -1px;
+}
+
+.filter-tabs li.is-active button {
+  background: var(--bulma-link);
+  border-color: var(--bulma-link);
+  color: var(--bulma-link-invert);
+  position: relative;
+  z-index: 1;
+}
+
+.filter-tabs button:hover {
+  background: var(--bulma-background);
+}
+
+.filter-status {
+  color: var(--bulma-text-weak);
+  margin: -0.5rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* ---- the anh ---- */
+.photo-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  overflow: hidden;
+  border-radius: var(--bulma-card-radius) var(--bulma-card-radius) 0 0;
+}
+
+.photo-btn img {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image.is-4by3 img.pos-bottom {
+  object-position: center 88%;
+}
+
+.photo-btn:hover img,
+.photo-btn:focus-visible img {
+  transform: scale(1.06);
+}
+
+.card {
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.photo-grid .column[hidden] {
+  display: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--bulma-link);
+  outline-offset: 3px;
+}
+
+/* ---- dai gioi thieu ---- */
+.about-band {
+  background: var(--bulma-scheme-main-bis);
+}
+
+.stats .heading {
+  margin-bottom: 0.3rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* link nam giua doan van phai co gach chan, khong chi khac mau */
+.footer a {
+  text-decoration: underline;
+}
+
+/* ---- khung xem anh ---- */
+.viewer-content {
+  width: min(1100px, 94vw);
+  max-height: 92vh;
+}
+
+.viewer-content img {
+  max-height: 78vh;
+  width: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.viewer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.viewer-caption {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  text-align: center;
+}
+
+.viewer-count {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* tren dien thoai cho cac tab xuong dong thay vi cuon ngang */
+@media screen and (max-width: 768px) {
+  .tabs ul.filter-tabs {
+    flex-wrap: wrap;
+    border: 0;
+    gap: 6px;
+  }
+
+  .tabs.is-toggle .filter-tabs li button {
+    border-radius: 9999px;
+    margin: 0;
+  }
+}
+
+/* nguoi dung bat giam chuyen dong */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .card,
+  .photo-btn img {
+    transition: none;
+  }
+
+  .card:hover,
+  .photo-btn:hover img,
+  .photo-btn:focus-visible img {
+    transform: none;
+  }
+}
