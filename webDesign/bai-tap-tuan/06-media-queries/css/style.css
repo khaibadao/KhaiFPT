@@ -1,0 +1,70 @@
+/* ===== mac dinh: che do dien thoai (1 cot) ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2efe9;
+  color: #222;
+  text-align: center;
+}
+
+h1 {
+  color: #14532d;
+}
+
+div {
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #14532d;
+  border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* anh my khe la anh doc, lay phan bien o duoi */
+div:nth-of-type(3) img {
+  object-position: bottom;
+}
+
+div p {
+  margin: 6px 0 0;
+  font-weight: bold;
+}
+
+a {
+  display: inline-block;
+  margin: 10px 0 20px;
+  color: #14532d;
+}
+
+/* ===== truy van 1: may tinh bang (tu 772px) ===== */
+@media screen and (min-width: 772px) {
+  div {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin: 0 1% 20px;
+  }
+
+  img {
+    max-height: 30vh;
+  }
+}
+
+/* ===== truy van 2: man hinh lon (tu 998px) ===== */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30%;
+  }
+}

@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family:Arial, sans-serif;
+}
+
+p {
+   font-size: 25px;
+   font-family:Arial, sans-serif;
+}
+
+img{
+  width:100%;
+}
+
+p{
+  text-align:center;
+}
+
+/* ===== mobile first: luoi 1 cot ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+figure {
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid #14532d;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.grid img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+/* anh my khe la anh doc */
+.grid figure:nth-child(3) img {
+    object-position: bottom;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #14532d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== may tinh bang: tu 772px ===== */
+@media screen and (min-width: 772px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid img {
+        border-radius: 50%;
+    }
+
+    .grid figure:last-child {
+        grid-column: span 2;
+    }
+}
+
+/* ===== man hinh lon: tu 992px ===== */
+@media screen and (min-width: 992px) {
+    .grid figure:nth-child(3n) {
+        grid-column: span 2;
+    }
+
+    .grid img {
+        border-radius: 0;
+    }
+
+    /* tam trai rong thi anh cung rong ra */
+    .grid figure:nth-child(3n) img {
+        width: 600px;
+    }
+}
+
+/* ===== nguoi dung bat giam chuyen dong ===== */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ===== che do toi ===== */
+@media (prefers-color-scheme: dark) {
+    figure {
+        background-color: #1e1e1e;
+        border-color: #000;
+    }
+
+    figcaption {
+        color: #ffe66d;
+    }
+}

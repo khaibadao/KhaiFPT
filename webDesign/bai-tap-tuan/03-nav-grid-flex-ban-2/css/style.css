@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.7;
+  color: #2b2b2b;
+  background-color: #fbfaf6;
+}
+
+h1, h2, h3 {
+  color: #14532d;
+}
+
+/* link nhay toi noi dung chinh, an cho toi khi focus */
+.skip-link {
+  position: absolute;
+  left: 0;
+  top: -60px;
+  padding: 10px 16px;
+  background-color: #f6b27a;
+  color: #14532d;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ===== header / nav ===== */
+.site-header {
+  background-color: #14532d;
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* chi chon anh nam trong nav */
+nav img {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px;
+  border-radius: 12px;
+}
+
+.menu {
+  display: inline-flex;
+  list-style: none;
+  margin: 0 0 0 25px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* style cu cua li - tam tat
+.gear li:nth-child(even) {
+  color: #1d3557;
+  font-weight: bold;
+}
+*/
+
+.menu a {
+  display: block;
+  margin: 0 4px;
+  padding: 6px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #f6b27a;
+  color: #14532d;
+}
+
+.menu a.active {
+  border-bottom-color: #f6b27a;
+}
+
+main {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* anh noi chung: border + padding + bo goc */
+img {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #14532d;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.hero-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* ===== lop flex (trang chu) ===== */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.place {
+  flex-basis: 300px;
+  padding: 12px;
+  background-color: #ffffff;
+  border-top: 4px solid #f6b27a;
+}
+
+.flex img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* anh my khe la anh doc */
+.place:nth-child(3) img {
+  object-position: bottom;
+}
+
+/* ===== lop grid (bo suu tap) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 25px;
+}
+
+.grid figure {
+  margin: 0;
+}
+
+.grid img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.35s;
+}
+
+.grid img:hover {
+  transform: translateY(-8px);
+}
+
+/* anh chan va le bo goc khac nhau */
+.grid figure:nth-child(even) img {
+  border-radius: 0 30px;
+}
+
+.grid figure:nth-child(odd) img {
+  border-radius: 30px 0;
+}
+
+figcaption {
+  padding-top: 4px;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* ===== trang gioi thieu ===== */
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.site-footer {
+  padding: 18px;
+  text-align: center;
+  background-color: #14532d;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  nav {
+    width: 100%;
+  }
+
+  .menu {
+    margin: 10px 0 0;
+  }
+
+  .grid {
+    grid-template-columns: 45% 45%;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+}
